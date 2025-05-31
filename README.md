@@ -63,4 +63,34 @@ my training data has been a bit biased, as you can see. i suggest you train your
 
 ---
 
+## setup instructions:
+
+### 1. clone the repo
+```
+git clone https://github.com/miniponder/virtual-self-driving-car.git
+cd virtual-self-driving-car
+```
+
+### 2. create and activate a virtual environment
+```
+python -m venv venv
+source venv/bin/activate
+```
+
+### 3. install dependencies
+```
+pip install -r requirements.txt
+```
+
+### 4. build your own model (optional but recommended)
+create your own data from udacity's [self-driving-car-sim](https://github.com/udacity/self-driving-car-sim.git) application or download the dataset from [kaggle.com](https://www.kaggle.com/datasets/sshikamaru/udacity-self-driving-car-dataset). you can then generate the model by running all the cells in [behavioural_cloning](behaviourial_cloning.ipynb) on google colab. just make sure you edit the first few lines to change the dataset.
+
+### 5. test your model
+to test your generated model, run this in your terminal and test it in autonomous mode on udacity's application:
+```
+python drive.py
+```
+
+---
+
 ###### this project was made from [ryan slim](https://www.udemy.com/user/rayan-slim/?srsltid=AfmBOopriGroXdgGx4ImwTj76Uzn7D2e1hcXKrtyBZDLs9kSn025rAjr)'s course on udemy.com. he is a great teacher and i'm grateful to him.
