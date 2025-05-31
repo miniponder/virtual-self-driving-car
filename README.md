@@ -1,21 +1,60 @@
 # virtual-self-driving-car
 
-this is an applied deep learning project, where a model was developed which can predict the steering angle of the car in real time. computer vision medthods such as data augmentation, batch generation, image preprocessing, were used. the model developed was based on the nvidia model architecture with 5 convolution layers.
+this is an applied deep learning project where a convolutional neural network (cnn) was developed to predict the steering angle of a car in real time. computer vision techniques such as data augmentation, image preprocessing, and batch generation were employed to improve the model's performance and robustness.  
 
-### data augmentation techniques used:
+the model is based on the **nvidia architecture**, consisting of five convolutional layers followed by fully connected layers.
 
-#### 1. image flipping
-![a comparison between original image and flipped image](images/flipped-image.png)
-#### 2. image panning
-![a comparison between original image and panned image](images/panned-image.png)
-#### 3. altering brightness
-![a comparison between original image and brightness altered image](images/brightness-altered-image.png)
-#### 4. image zooming
-![a comparison between original image and zoomed image](images/zoomed-image.png)
+---
 
-### image preprocessing:
-![a comparison between original image and preprocessed image](images/preprocessed-image.png)
+### data augmentation techniques
 
-after training the model with batch generation techniques a clear difference between training and validation loss was acheived.
+to increase data variability and simulate different driving scenarios, the following augmentation methods were applied:
 
-![comparison between training and validation loss](images/loss.png)
+#### 1. image flipping   
+![flipped image](images/flipped-image.png)
+
+#### 2. image panning   
+![panned image](images/panned-image.png)
+
+#### 3. altering brightness  
+![brightness altered image](images/brightness-altered-image.png)
+
+#### 4. image zooming   
+![zoomed image](images/zoomed-image.png)
+
+---
+
+### image preprocessing
+
+the input images were preprocessed by cropping irrelevant parts (e.g., sky and car hood), resizing, and normalizing pixel values.
+
+![preprocessed image](images/preprocessed-image.png)
+
+---
+
+### training results
+
+the model was trained using a custom batch generator to efficiently feed augmented data into the network. a clear distinction between training and validation loss indicates effective learning and minimal overfitting.
+
+![training and validation loss](images/loss.png)
+
+---
+
+### 🛠️ technologies used:
+
+- python
+- keras / tensorflow
+- opencv
+- numpy
+- matplotlib
+- google colab
+
+---
+
+
+---
+
+## demo
+
+
+---
