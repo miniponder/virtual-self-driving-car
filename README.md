@@ -57,6 +57,8 @@ the training data was obtained from udacity's [self-driving-car-sim](https://git
 
 ## demo
 
+my training data has been a bit biased, as you can see. i suggest you train your own data, and hopefully you can build a model that matches your driving style.
+
 ![terrain 1](images/terrain-1-sim.GIF)
 
 ---
