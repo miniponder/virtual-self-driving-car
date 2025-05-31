@@ -6,25 +6,25 @@ the model is based on the **nvidia architecture**, consisting of five convolutio
 
 ---
 
-### data augmentation techniques
+## data augmentation techniques
 
 to increase data variability and simulate different driving scenarios, the following augmentation methods were applied:
 
-#### 1. image flipping   
+### 1. image flipping   
 ![flipped image](images/flipped-image.png)
 
-#### 2. image panning   
+### 2. image panning   
 ![panned image](images/panned-image.png)
 
-#### 3. altering brightness  
+### 3. altering brightness  
 ![brightness altered image](images/brightness-altered-image.png)
 
-#### 4. image zooming   
+### 4. image zooming   
 ![zoomed image](images/zoomed-image.png)
 
 ---
 
-### image preprocessing
+## image preprocessing
 
 the input images were preprocessed by cropping irrelevant parts (e.g., sky and car hood), resizing, and normalizing pixel values.
 
@@ -32,7 +32,7 @@ the input images were preprocessed by cropping irrelevant parts (e.g., sky and c
 
 ---
 
-### training results
+## training results
 
 the model was trained using a custom batch generator to efficiently feed augmented data into the network. a clear distinction between training and validation loss indicates effective learning and minimal overfitting.
 
@@ -40,7 +40,7 @@ the model was trained using a custom batch generator to efficiently feed augment
 
 ---
 
-### 🛠️ technologies used:
+## technologies used:
 
 - python
 - keras / tensorflow
@@ -51,10 +51,12 @@ the model was trained using a custom batch generator to efficiently feed augment
 
 ---
 
+the training data was obtained from udacity's [self-driving-car-sim](https://github.com/udacity/self-driving-car-sim.git). it was then tested in autonomous mode on two different terrains. in this repo the are two data folders. the first one is a bit biased to the left side, while the second one is unbiased. feel free to use my data or generate your own data in the training mode and use it to build a new model.
 
 ---
 
 ## demo
 
+![terrain 1](images/terrain-1-sim.GIF)
 
 ---
