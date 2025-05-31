@@ -36,7 +36,7 @@ def telemetry(sid, data):
 
 @sio.on('connect')
 def connect(sid, environ):
-    print('Connected')
+    print('connected')
     send_control(0, 0)
 
 def send_control(steering_angle, throttle):
