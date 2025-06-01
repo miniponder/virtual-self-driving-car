@@ -48,7 +48,7 @@ requests-oauthlib==2.0.0
 rich==14.0.0
 rsa==4.9.1
 simple-websocket==1.1.0
-six @ file:///home/conda/feedstock_root/build_artifacts/six_1733380938961/work
+six==1.16.0
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
 tensorflow==2.19.0

@@ -1,5 +1,7 @@
-import socketio
 import eventlet
+eventlet.monkey_patch()
+
+import socketio
 import numpy as np
 from flask import Flask
 from tensorflow.keras.models import load_model
@@ -43,9 +45,9 @@ def send_control(steering_angle, throttle):
     sio.emit('steer', data={
         'steering_angle': str(steering_angle),
         'throttle': str(throttle)
-    })
+    }, skip_sid=True)
 
 if __name__ == '__main__':
     model = load_model('model.h5', custom_objects={'mse': mse})
-    app = socketio.Middleware(sio, app)
+    app = socketio.WSGIApp(sio, app)
     eventlet.wsgi.server(eventlet.listen(('', 4567)), app)
