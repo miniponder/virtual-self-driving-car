@@ -51,7 +51,7 @@ the model was trained using a custom batch generator to efficiently feed augment
 
 ---
 
-the training data was made from udacity's [self-driving-car-sim](https://github.com/udacity/self-driving-car-sim.git) application. it was then tested in autonomous mode on two different terrains. in this repo the are two data folders. the first one is a bit biased to the left, while the second one is unbiased. feel free to use my data or generate your own data in the training mode and use it to build a new model.
+the training data was made from udacity's [self-driving-car-sim](https://github.com/udacity/self-driving-car-sim.git) application. it was then tested in autonomous mode on two different terrains. in this repo the are two data folders. while the first one is a bit biased to the left, the second one is unbiased. feel free to use my data or generate your own data in the training mode and use it to build a new model.
 
 ---
 
