@@ -86,4 +86,10 @@ python drive.py
 
 ---
 
+## demo:
+
+the generated model was then tested on autonomous mode in the second terrain. you can watch the demo [here](https://iitkgpacin-my.sharepoint.com/:v:/g/personal/karthikeya1205_kgpian_iitkgp_ac_in/Eb5CF3fiX0JHo8KQN6Bh8YABGdgT_dOIaiGEd63srAK8gQ?e=by7A46)
+
+---
+
 ###### this project was made from [ryan slim](https://www.udemy.com/user/rayan-slim/?srsltid=AfmBOopriGroXdgGx4ImwTj76Uzn7D2e1hcXKrtyBZDLs9kSn025rAjr)'s course on udemy.com. he is a great teacher and i'm grateful to him.
