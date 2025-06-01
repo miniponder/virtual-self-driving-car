@@ -51,7 +51,7 @@ the model was trained using a custom batch generator to efficiently feed augment
 
 ---
 
-the training data was made from udacity's [self-driving-car-sim](https://github.com/udacity/self-driving-car-sim.git) application. it was then tested in autonomous mode on two different terrains. in this repo the are two data folders. while the first one is a bit biased to the left, the second one is unbiased. feel free to use my data or generate your own data in the training mode and use it to build a new model.
+the training data was made from udacity's [self-driving-car-sim](https://github.com/udacity/self-driving-car-sim.git) application. it was then tested in autonomous mode on two different terrains. in this repo the are two data folders. while the first one is a bit biased to the left, the second one is unbiased. i myself have used [ryan slim](https://www.udemy.com/user/rayan-slim/?srsltid=AfmBOopriGroXdgGx4ImwTj76Uzn7D2e1hcXKrtyBZDLs9kSn025rAjr)'s data. feel free to use my data or generate your own data in the training mode and use it to build a new model.
 
 
 ---
@@ -66,8 +66,8 @@ cd virtual-self-driving-car
 
 ### 2. create and activate a virtual environment
 ```
-python -m venv venv
-source venv/bin/activate
+conda create --name ml_app python=3.x
+conda activate ml_app
 ```
 
 ### 3. install dependencies
