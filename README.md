@@ -60,7 +60,7 @@ the training data was made from udacity's [self-driving-car-sim](https://github.
 
 ### 1. clone the repo
 ```
-git clone https://github.com/miniponder/virtual-self-driving-car.git
+git clone https://github.com/rthponder/virtual-self-driving-car.git
 cd virtual-self-driving-car
 ```
 
